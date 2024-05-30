@@ -104,6 +104,7 @@ p {
 
 .paragpraphstyle {
   font-size: 14px;
+  text-align: center;
 }
 
 /* Get in touch */
@@ -172,10 +173,21 @@ button:hover {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: repeat(1, 1fr);
-    width: 90vw;
+    width: 80vw;
     margin: 100px auto 0 auto;
     text-align: start;
     row-gap: 2rem;
-    column-gap: 1rem;
+    column-gap: 2rem;
+  }
+
+  .ctabutton,
+  button:hover {
+    background-color: #6f43f3;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
   }
 }
+

@@ -195,5 +195,7 @@ button:hover {
     color: white;
     cursor: pointer;
   }
+  .alignment {
+    text-align: start;
+  }
 }
-

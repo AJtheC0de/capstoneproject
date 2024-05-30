@@ -198,4 +198,8 @@ button:hover {
   .alignment {
     text-align: start;
   }
+
+  .aligncenter {
+    text-align: center;
+  }
 }

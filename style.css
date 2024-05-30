@@ -107,6 +107,10 @@ p {
   text-align: center;
 }
 
+.alignment {
+  text-align: start;
+}
+
 /* Get in touch */
 
 .touch {
@@ -121,6 +125,9 @@ p {
 
 .cta {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .ctabutton,
@@ -129,7 +136,6 @@ button {
   border: none;
   border-radius: 12px;
   padding: 10px 30px;
-  margin-left: 30px;
   color: white;
   cursor: pointer;
   transition: 0.5s;
@@ -177,7 +183,7 @@ button:hover {
     margin: 100px auto 0 auto;
     text-align: start;
     row-gap: 2rem;
-    column-gap: 2rem;
+    column-gap: 1rem;
   }
 
   .ctabutton,

@@ -1,602 +1,160 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+/* Header Section */
 
 .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 60vh;
-  background-color: #e4f9f5;
+  height: 50vh;
+  background-color: #e4f8f5;
   align-items: center;
+  gap: 10px;
+}
+
+.headertitle > h1,
+h2 {
+  width: 320px;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-.palms {
-  position: absolute;
-  left: 120px;
+.headertitle > h1 {
+  font-family: "Dancing Script", cursive;
 }
 
-.palms img {
-  max-height: 190px;
+.headertitle > h2 {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
-.palmright {
-  position: absolute;
-  right: 120px;
-  bottom: 300px;
+p {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
 }
 
-.palmright img {
-  max-height: 190px;
-}
-
-.headingtext h1 {
-  font-size: 40px;
-}
-
-.dritonimg img {
-  height: 300px;
+.imgdriton {
+  height: 200px;
   border-radius: 50%;
-  padding: 30px;
-}
-.abouttext {
-  width: 50vh;
+  margin-top: 10px;
 }
 
-.myskills {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+/* Skill Section */
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 250px);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  padding: 0px;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  width: 50%;
+  margin: 100px auto 0 auto;
+  text-align: left;
+  row-gap: 1rem;
 }
 
-.cat {
-  grid-area: 1/2/1/2;
+.sixamscreen {
   display: flex;
   justify-content: center;
+}
+
+.sixamscreen img {
+  height: 150px;
+  width: auto;
+}
+
+.codingscreen {
+  display: flex;
+  justify-content: center;
+}
+.codingscreen img {
+  width: auto;
+  height: 150px;
+}
+
+.codingtext {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
-  height: 30rem;
-  align-items: center;
 }
-.techtext {
-  grid-area: 1/3/1/3;
+
+.webdesgintext {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
-  height: 30rem;
-  align-items: center;
-  text-align: center;
+}
+.titlecolour {
+  color: #ab90fd;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.hotwings {
-  grid-area: 3/2/2/2;
+.paragpraphstyle {
+  font-size: 14px;
+}
+
+/* Get in touch */
+
+.touch {
   display: flex;
   justify-content: center;
+  height: 40vh;
   flex-direction: column;
-  height: 30rem;
   align-items: center;
+  gap: 9px;
 }
 
-.hotwingstext {
-  grid-area: 2/3/2/3;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 30rem;
-  align-items: center;
-  text-align: center;
+.cta {
+  margin-top: 30px;
 }
 
-.grid-container iframe {
-  height: 50%;
-  border-radius: 12px;
-}
-
-h3 {
-  color: green;
-}
-
-.getintouch {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 120px;
-  align-items: center;
-  gap: 30px;
-}
-
-.getintouch h4 {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-}
-
-.getintouch h2 {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-}
-.getintouch p {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-}
-
-.contactbutton {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
+.ctabutton,
 button {
-  padding: 10px 30px 10px 30px;
-  cursor: pointer;
+  background-color: #ab90fd;
   border: none;
   border-radius: 12px;
-  background-color: rgb(14, 205, 141);
+  padding: 10px 30px;
+  margin-left: 30px;
   color: white;
-  transition: 112ms;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
+.ctabutton,
 button:hover {
-  padding: 10px 30px 10px 30px;
-  cursor: pointer;
+  background-color: #6f43f3;
   border: none;
   border-radius: 12px;
-  background-color: rgb(20, 98, 72);
-  color: orange;
+  padding: 10px 30px;
+  margin-left: 30px;
+  color: white;
+  cursor: pointer;
 }
 
-footer {
-  background-color: #e4f9f5;
+.secondtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+/*  footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 10vh;
   padding: 30px;
-  margin-top: 90px;
+  background-color: #e4f8f5;
 }
-
-.footing {
+.writer {
   display: flex;
   justify-content: center;
-  gap: 30px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-a:hover {
-  color: green;
-  text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.author {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  color: grey;
-}
-
-@media (max-width: 917px) {
-  h1 {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 60vh;
-    background-color: #e4f9f5;
-    align-items: center;
-    text-align: center;
-  }
-
-  .palms {
-    position: absolute;
-    left: 100px;
-  }
-
-  .palms img {
-    max-height: 150px;
-  }
-
-  .palmright {
-    position: absolute;
-    right: 100px;
-    bottom: 400px;
-  }
-
-  .palmright img {
-    max-height: 150px;
-  }
-
-  .headingtext h1 {
-    font-size: 20px;
-  }
-
-  .headingtext h2 {
-    font-size: 15px;
-  }
-
-  .dritonimg img {
-    height: 200px;
-    border-radius: 50%;
-    padding: 20px;
-  }
-  .abouttext {
-    width: 30vh;
-  }
-
-  .myskills {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 0px;
-  }
-
-  .cat {
-    grid-area: 1/2/1/2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 30rem;
-    align-items: center;
-  }
-  .techtext {
-    grid-area: 1/3/1/3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 30rem;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hotwings {
-    grid-area: 3/2/2/2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 30rem;
-    align-items: center;
-  }
-
-  .hotwingstext {
-    grid-area: 2/3/2/3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 30rem;
-    align-items: center;
-    text-align: center;
-  }
-
-  .grid-container iframe {
-    height: 50%;
-    border-radius: 12px;
-  }
-
-  h3 {
-    color: green;
-  }
-
-  .getintouch {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 120px;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .getintouch h4 {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-  }
-
-  .getintouch h2 {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-  }
-  .getintouch p {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-  }
-
-  .contactbutton {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  button {
-    padding: 10px 30px 10px 30px;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    background-color: rgb(14, 205, 141);
-    color: white;
-    transition: 112ms;
-  }
-
-  button:hover {
-    padding: 10px 30px 10px 30px;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    background-color: rgb(20, 98, 72);
-    color: orange;
-  }
-
-  footer {
-    background-color: #e4f9f5;
-    padding: 30px;
-    margin-top: 90px;
-  }
-
-  .footing {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  a {
-    color: black;
-    text-decoration: none;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  a:hover {
-    color: green;
-    text-decoration: none;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  .author {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    color: grey;
-  }
-}
-
-/* below 743 */
-
-@media (max-width: 743px) {
-  h1 {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 60vh;
-    background-color: #e4f9f5;
-    align-items: center;
-    text-align: center;
-  }
-
-  .palms {
-    position: absolute;
-    left: 100px;
-  }
-
-  .palms img {
-    max-height: 100px;
-  }
-
-  .palmright {
-    position: absolute;
-    right: px;
-    bottom: 400px;
-  }
-
-  .palmright img {
-    max-height: 100px;
-  }
-
-  .headingtext h1 {
-    font-size: 20px;
-  }
-
-  .headingtext h2 {
-    font-size: 15px;
-  }
-
-  .dritonimg img {
-    height: 200px;
-    border-radius: 50%;
-    padding: 20px;
-  }
-  .abouttext {
-    width: fit-content;
-  }
-
-  .myskills {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  .grid-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
-    gap: 0px;
-    align-items: center;
-  }
-
-  .cat {
-    height: 90rem;
-  }
-  .techtext {
-    margin-bottom: 40px;
-    min-width: 320px;
-    width: 330px;
-  }
-
-  .hotwings {
-    height: 90rem;
-  }
-
-  .hotwingstext {
-    padding: 30px;
-    min-width: 320px;
-    width: 330px;
-  }
-
-  .grid-container iframe {
-  }
-
-  h3 {
-    color: green;
-  }
-
-  .getintouch {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 120px;
-    align-items: center;
-    gap: 30px;
-    margin-top: 80px;
-  }
-
-  .getintouch h4 {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-  }
-
-  .getintouch h2 {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-  }
-  .getintouch p {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    min-width: 320px;
-    width: 300px;
-    text-align: center;
-    margin-bottom: 0px 0px 40px 0px;
-  }
-
-  .contactbutton {
-    display: flex;
-    justify-content: center;
-    margin-top: 120px;
-  }
-
-  button {
-    padding: 10px 30px 10px 30px;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    background-color: rgb(14, 205, 141);
-    color: white;
-    transition: 112ms;
-  }
-
-  button:hover {
-    padding: 10px 30px 10px 30px;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    background-color: rgb(20, 98, 72);
-    color: orange;
-  }
-
-  footer {
-    background-color: #e4f9f5;
-    padding: 30px;
-    margin-top: 90px;
-  }
-
-  .footing {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  a {
-    color: black;
-    text-decoration: none;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  a:hover {
-    color: green;
-    text-decoration: none;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-
-  .author {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    color: grey;
-  }
-}
-
-@media (max-width: 480px) {
-  p.abouttext {
-    width: 200px;
-    min-width: 100px;
-    font-size: 14px;
-  }
-
-  .palmright img {
-    max-height: 60px;
-    left: 30px;
-  }
+  background-color: #e4f8f5;
+  padding: 20px;
 }

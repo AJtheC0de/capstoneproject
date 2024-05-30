@@ -51,7 +51,7 @@ p {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: repeat(1, 1fr);
-  width: 50%;
+  width: 90vw;
   margin: 100px auto 0 auto;
   text-align: left;
   row-gap: 1rem;
